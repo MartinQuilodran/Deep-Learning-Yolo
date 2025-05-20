@@ -23,7 +23,7 @@ pip install -r requirements.txt
 GPU compatible con CUDA (Nvidia)
 
 ## Comparacion Modelos Entrenados
-En un inicio ocupamos el modelo preentrenado por yolo, pero este era muy lento, tenia pocos fotogramas por segundo y tenia mucha latencia, decidimos cambiar un modelo entrenado por un dataset de 267 fotos especificas de CS:GO, pero debido a su bajo rendimiento decidimos cambiar a otro dataset de 10.000 fotos
+En un inicio ocupamos el modelo preentrenado por yolo, pero este era muy lento, tenia pocos fotogramas por segundo y tenia mucha latencia, para el segundo avance, decidimos cambiar por un modelo entrenado por nosotros con un dataset de 267 fotos especificas de CS:GO, pero debido a su bajo rendimiento decidimos cambiar a otro dataset de 10.000 fotos
 ### 1er Dataset(267 fotos)
 ![results](https://github.com/user-attachments/assets/b4048bad-359d-4b74-8354-d2b2c9662bde)
 

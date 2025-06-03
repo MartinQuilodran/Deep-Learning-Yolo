@@ -39,3 +39,5 @@ Fueron entrenados 3 modelos, basado en los modelos de yolo Nano, Small, y Medium
 
 El modelo Medium ofrece un rendimiento significativamente superior en detección de objetos, tanto en precisión como en capacidad de generalización. El resto, aunque más ligeros, compromete notablemente la calidad de los resultados. Idealmente, usar Medium si los recursos lo permiten.
 
+### 3ra entrega
+En esta fase implementamos un análisis estadístico que otorga el tiempo de reacción desde que se identifica el enemigo hasta que se ejecuta. Este análisis está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Evento sería el momento en que detecta al enemigo, timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería la localización exacta del enemigo representada en pixeles. 

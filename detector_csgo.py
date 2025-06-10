@@ -16,7 +16,7 @@ import tkinter as tk
 from tkinter import messagebox
 import pandas as pd
 # CONFIG
-MODEL_PATH = 'yolov5/runs/train/csgo_custom7/weights/best.pt'
+MODEL_PATH = 'csgo_Yolov5M/weights/best.pt'
 CROP_SIZE = 512
 AIM_SPEED = 3.0
 

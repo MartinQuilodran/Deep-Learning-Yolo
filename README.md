@@ -58,4 +58,6 @@ En esta fase se desarrolló una interfaz gráfica interactiva utilizando la libr
 
 A partir de estos datos, el sistema calcula métricas como el tiempo promedio de reacción del jugador, la precisión de los disparos, la tasa de error y otras estadísticas que ayudan a evaluar el desempeño durante la partida. Esta etapa también permite visualizar los datos recogidos de manera ordenada, apoyando así un análisis más profundo para futuras mejoras.
 
+![App](https://github.com/user-attachments/assets/126273b0-68a6-41c4-85a6-8db6cf2bd595) ![AppResults](https://github.com/user-attachments/assets/15018a78-d763-41c9-ae4e-45e9b2cdae53)
+
 

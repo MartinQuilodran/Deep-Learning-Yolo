@@ -1,6 +1,9 @@
 ## 1ra entrega
 
 # VisionAim
+VisionAim es un programa de detección de enemigos para CS:GO para ayudar al jugador a mejorar mediante análisis estadisticos de su forma de juego.
+
+![VID-20250513-WA0000_1](https://github.com/user-attachments/assets/7d465525-60af-4c0b-8866-206184b41589)
 
 ## Instalación
 
@@ -27,7 +30,7 @@ GPU compatible con CUDA (Nvidia)
 ### 2da entrega
 
 ## Comparacion Modelos Entrenados
-En un inicio ocupamos el modelo preentrenado por yolo, pero este era muy lento, tenia pocos fotogramas por segundo y tenia mucha latencia, para el segundo avance, decidimos cambiar por un modelo entrenado por nosotros con un dataset de 267 fotos especificas de CS:GO, pero debido a su bajo rendimiento decidimos cambiar a otro dataset de 10.000 fotos
+En la primera entrega ocupamos el modelo preentrenado por yolo, pero este era muy lento, tenia pocos fotogramas por segundo y tenia mucha latencia, para el segundo avance, decidimos cambiar por un modelo entrenado por nosotros con un dataset de 267 fotos especificas de CS:GO, pero debido a su bajo rendimiento decidimos cambiar a otro dataset de 10.000 fotos
 ### 1er Dataset(267 fotos)
 ![results](https://github.com/user-attachments/assets/b4048bad-359d-4b74-8354-d2b2c9662bde)
 
@@ -42,6 +45,9 @@ Fueron entrenados 3 modelos, basado en los modelos de yolo Nano, Small, y Medium
 ![results (3)](https://github.com/user-attachments/assets/440f0ec2-340b-4a0f-b173-9d71920088a1)
 
 El modelo Medium ofrece un rendimiento significativamente superior en detección de objetos, tanto en precisión como en capacidad de generalización. El resto, aunque más ligeros, compromete notablemente la calidad de los resultados. Idealmente, usar Medium si los recursos lo permiten.
+
+![VID_20250610_063247_752](https://github.com/user-attachments/assets/dea7d498-481c-401f-86bc-dacb2d6eb0b5)
+
 
 ## 3ra entrega
 En esta fase implementamos un analisis que está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Existen 3 tipos de evento:

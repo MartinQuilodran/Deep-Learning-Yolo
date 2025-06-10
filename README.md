@@ -45,9 +45,13 @@ El modelo Medium ofrece un rendimiento significativamente superior en detección
 
 ## 3ra entrega
 En esta fase implementamos un analisis que está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Existen 3 tipos de evento:
+
 Detección - Cuando un enemigo entra dentro del campo de visión de YOLO
+
 Disparo - Las veces que se presiona el click izquierdo en la ejecución
+
 Reacción - Calculo que se realiza con los timestamp para saber cuando se demoró en llegar a una coordenada central para saber cuanto el jugador se demoró en apuntarle.
+
 Timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería las coordenadas exactas del enemigo representada en pixeles dentro de la pantalla. Esto es guardado en un archivo .csv para su posterior analisis estadístico en una siguiente fase.
 
 

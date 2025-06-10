@@ -1,4 +1,4 @@
-### 1ra entrega
+## 1ra entrega
 
 # VisionAim
 
@@ -43,11 +43,11 @@ Fueron entrenados 3 modelos, basado en los modelos de yolo Nano, Small, y Medium
 
 El modelo Medium ofrece un rendimiento significativamente superior en detección de objetos, tanto en precisión como en capacidad de generalización. El resto, aunque más ligeros, compromete notablemente la calidad de los resultados. Idealmente, usar Medium si los recursos lo permiten.
 
-### 3ra entrega
+## 3ra entrega
 En esta fase implementamos un análisis estadístico que otorga el tiempo de reacción desde que se identifica el enemigo hasta que se ejecuta. Este análisis está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Evento sería el momento en que detecta al enemigo, timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería la localización exacta del enemigo representada en pixeles. 
 
 
-### 4ta entrega
+## 4ta entrega
 En esta fase se desarrolló una interfaz gráfica interactiva utilizando la librería Tkinter. Esta interfaz permite al usuario iniciar o detener la ejecución del sistema de detección, visualizar el estado del programa y acceder a un análisis estadístico. Además, se implementó un sistema de análisis estadístico automatizado que se activa al finalizar la sesión. Este análisis utiliza los datos registrados durante la ejecución, donde cada entrada contiene cuatro atributos clave: Evento, timestamp, cx y cy.
 
 - Evento indica la acción registrada (por ejemplo: “detectado”, “click” o “auto”).

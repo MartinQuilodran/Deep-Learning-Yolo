@@ -44,19 +44,23 @@ Fueron entrenados 3 modelos, basado en los modelos de yolo Nano, Small, y Medium
 El modelo Medium ofrece un rendimiento significativamente superior en detección de objetos, tanto en precisión como en capacidad de generalización. El resto, aunque más ligeros, compromete notablemente la calidad de los resultados. Idealmente, usar Medium si los recursos lo permiten.
 
 ## 3ra entrega
-En esta fase implementamos un análisis estadístico que otorga el tiempo de reacción desde que se identifica el enemigo hasta que se ejecuta. Este análisis está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Evento sería el momento en que detecta al enemigo, timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería la localización exacta del enemigo representada en pixeles. 
+En esta fase implementamos un analisis que está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Existen 3 tipos de evento:
+Detección - Cuando un enemigo entra dentro del campo de visión de YOLO
+Disparo - Las veces que se presiona el click izquierdo en la ejecución
+Reacción - Calculo que se realiza con los timestamp para saber cuando se demoró en llegar a una coordenada central para saber cuanto el jugador se demoró en apuntarle.
+Timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería las coordenadas exactas del enemigo representada en pixeles dentro de la pantalla. Esto es guardado en un archivo .csv para su posterior analisis estadístico en una siguiente fase.
 
 
 ## 4ta entrega
 En esta fase se desarrolló una interfaz gráfica interactiva utilizando la librería Tkinter. Esta interfaz permite al usuario iniciar o detener la ejecución del sistema de detección, visualizar el estado del programa y acceder a un análisis estadístico. Además, se implementó un sistema de análisis estadístico automatizado que se activa al finalizar la sesión. Este análisis utiliza los datos registrados durante la ejecución, donde cada entrada contiene cuatro atributos clave: Evento, timestamp, cx y cy.
 
-- Evento indica la acción registrada (por ejemplo: “detectado”, “click” o “auto”).
+- Evento indica la acción registrada (por ejemplo: “Detección”, “Disparo” o “Reacción”).
 
 - Timestamp representa el momento exacto en que ocurrió el evento, medido en segundos desde la época Unix.
 
 - cx y cy corresponden a las coordenadas del centro del enemigo detectado en píxeles dentro del frame.
 
-A partir de estos datos, el sistema calcula métricas como el tiempo promedio de reacción del jugador, la precisión de los disparos, la tasa de error y otras estadísticas que ayudan a evaluar el desempeño durante la partida. Esta etapa también permite visualizar los datos recogidos de manera ordenada, apoyando así un análisis más profundo para futuras mejoras.
+A partir de estos datos, el sistema calcula métricas como la precisión de los disparos, la tasa de error y otras estadísticas que ayudan a evaluar el desempeño durante la partida. Esta etapa también permite visualizar los datos recogidos de manera ordenada, apoyando así un análisis más profundo para futuras mejoras.
 
 ![App](https://github.com/user-attachments/assets/126273b0-68a6-41c4-85a6-8db6cf2bd595) ![AppResults](https://github.com/user-attachments/assets/15018a78-d763-41c9-ae4e-45e9b2cdae53)
 

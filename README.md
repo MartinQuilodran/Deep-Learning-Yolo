@@ -1,3 +1,5 @@
+### 1ra entrega
+
 # VisionAim
 
 ## Instalación
@@ -22,6 +24,8 @@ pip install -r requirements.txt
 
 GPU compatible con CUDA (Nvidia)
 
+### 2da entrega
+
 ## Comparacion Modelos Entrenados
 En un inicio ocupamos el modelo preentrenado por yolo, pero este era muy lento, tenia pocos fotogramas por segundo y tenia mucha latencia, para el segundo avance, decidimos cambiar por un modelo entrenado por nosotros con un dataset de 267 fotos especificas de CS:GO, pero debido a su bajo rendimiento decidimos cambiar a otro dataset de 10.000 fotos
 ### 1er Dataset(267 fotos)
@@ -41,3 +45,17 @@ El modelo Medium ofrece un rendimiento significativamente superior en detección
 
 ### 3ra entrega
 En esta fase implementamos un análisis estadístico que otorga el tiempo de reacción desde que se identifica el enemigo hasta que se ejecuta. Este análisis está compuesto por 4 tipos de datos; Evento, timestamp, cx y cy. Evento sería el momento en que detecta al enemigo, timestamp representa el momento especifico en que se detectó al enemigo mediante un horario técnico, por último cx y cy sería la localización exacta del enemigo representada en pixeles. 
+
+
+### 4ta entrega
+En esta fase se desarrolló una interfaz gráfica interactiva utilizando la librería Tkinter. Esta interfaz permite al usuario iniciar o detener la ejecución del sistema de detección, visualizar el estado del programa y acceder a un análisis estadístico. Además, se implementó un sistema de análisis estadístico automatizado que se activa al finalizar la sesión. Este análisis utiliza los datos registrados durante la ejecución, donde cada entrada contiene cuatro atributos clave: Evento, timestamp, cx y cy.
+
+- Evento indica la acción registrada (por ejemplo: “detectado”, “click” o “auto”).
+
+- Timestamp representa el momento exacto en que ocurrió el evento, medido en segundos desde la época Unix.
+
+- cx y cy corresponden a las coordenadas del centro del enemigo detectado en píxeles dentro del frame.
+
+A partir de estos datos, el sistema calcula métricas como el tiempo promedio de reacción del jugador, la precisión de los disparos, la tasa de error y otras estadísticas que ayudan a evaluar el desempeño durante la partida. Esta etapa también permite visualizar los datos recogidos de manera ordenada, apoyando así un análisis más profundo para futuras mejoras.
+
+
